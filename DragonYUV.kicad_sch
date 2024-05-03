@@ -12269,16 +12269,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.208 46.99) (xy 144.018 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99cf2f35-df80-40da-9e5e-1fcd670b67f7")
-	)
-	(wire
-		(pts
 			(xy 309.88 85.09) (xy 314.96 85.09)
 		)
 		(stroke
@@ -12926,6 +12916,16 @@
 			(type default)
 		)
 		(uuid "e90d6364-13e4-4827-b9f9-950eec3a3df3")
+	)
+	(wire
+		(pts
+			(xy 139.7 48.26) (xy 143.51 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb61e796-3850-4bc9-991e-2047b83a3d10")
 	)
 	(wire
 		(pts
@@ -14096,28 +14096,6 @@
 			)
 		)
 	)
-	(global_label "CHB"
-		(shape output)
-		(at 140.208 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5dd34ad2-c5b2-4907-963e-3a392c553b24")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.0133 46.9106 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CLK"
 		(shape input)
 		(at 76.708 82.55 180)
@@ -14400,6 +14378,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX X"
+		(shape output)
+		(at 139.7 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8369431f-4b68-46e5-9308-5d5adac0f812")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.5463 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -22180,7 +22180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
 			(at 402.59 204.47 0)
 			(effects
 				(font
@@ -23633,73 +23633,6 @@
 				(path "/60bcfc2a-b89b-48a4-90e1-5d504fe5d18a"
 					(reference "IC6")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint_Probe")
-		(at 144.018 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5c988ed-8054-48db-be5b-c3f454ab3b0d")
-		(property "Reference" "TP4"
-			(at 147.828 44.1325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Chroma"
-			(at 147.828 46.6725 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 149.098 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.098 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.018 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f8cb439-926a-4647-8130-ac54af35ffda")
-		)
-		(instances
-			(project "DragonYUV"
-				(path "/60bcfc2a-b89b-48a4-90e1-5d504fe5d18a"
-					(reference "TP4")
-					(unit 1)
 				)
 			)
 		)
@@ -25547,6 +25480,73 @@
 			(project "DragonYUV"
 				(path "/60bcfc2a-b89b-48a4-90e1-5d504fe5d18a"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 143.51 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2de94a1-1bee-4de0-b38a-d1cf02bbcc3d")
+		(property "Reference" "TP4"
+			(at 147.32 45.4025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_MuxX"
+			(at 147.32 47.9425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 148.59 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98640a41-65b2-4c38-83ff-01b3b89226b2")
+		)
+		(instances
+			(project "DragonYUV"
+				(path "/60bcfc2a-b89b-48a4-90e1-5d504fe5d18a"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
