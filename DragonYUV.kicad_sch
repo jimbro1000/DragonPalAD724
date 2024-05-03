@@ -12919,6 +12919,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 48.26) (xy 143.51 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb61e796-3850-4bc9-991e-2047b83a3d10")
+	)
+	(wire
+		(pts
 			(xy 160.8074 377.6726) (xy 162.9664 377.6726)
 		)
 		(stroke
@@ -14368,6 +14378,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MUX X"
+		(shape output)
+		(at 139.7 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8369431f-4b68-46e5-9308-5d5adac0f812")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.5463 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -25448,6 +25480,73 @@
 			(project "DragonYUV"
 				(path "/60bcfc2a-b89b-48a4-90e1-5d504fe5d18a"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Probe")
+		(at 143.51 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2de94a1-1bee-4de0-b38a-d1cf02bbcc3d")
+		(property "Reference" "TP4"
+			(at 147.32 45.4025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_MuxX"
+			(at 147.32 47.9425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 148.59 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98640a41-65b2-4c38-83ff-01b3b89226b2")
+		)
+		(instances
+			(project "DragonYUV"
+				(path "/60bcfc2a-b89b-48a4-90e1-5d504fe5d18a"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
