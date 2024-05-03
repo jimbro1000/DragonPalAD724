@@ -501,6 +501,14 @@
       {
         "netclass": "Signal",
         "pattern": "/~{Y}"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "LUM"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "LINE PULSE"
       }
     ]
   },
