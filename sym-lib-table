@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Motorola PIA")(type "KiCad")(uri "${KIPRJMOD}/Motorola PIA.kicad_sym")(options "")(descr ""))
   (lib (name "vdg")(type "KiCad")(uri "${KIPRJMOD}/vdg.kicad_sym")(options "")(descr ""))
+  (lib (name "ECS-44-20-7S-TR")(type "KiCad")(uri "${KIPRJMOD}/ECS-44-20-7S-TR.kicad_sym")(options "")(descr ""))
 )
